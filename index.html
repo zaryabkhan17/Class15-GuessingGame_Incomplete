@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess Games</title>
+</head>
+
+<body>
+
+    Guessed Value: <h1 id="resul"></h1>
+
+    <form onsubmit="main()">
+        user's first number: <input type="number" id="user1" maxlength="4" required name="awe">
+        <button onclick="result()" name="awe">enter</button><br>
+        automatic Computer number: <input type="number" id="com1" maxlength="4"><br>
+        user's 2nd number: <input type="number" id="user2" maxlength="4" required>
+        <button onclick="num2()">enter</button>
+        <br>
+        automatic computer number: <input type="number" id="com2" maxlength="4"><br>
+        <button type="submit">Check</button>
+    </form>
+    <script>
+        var User1 = document.getElementById("user1").value;
+        User1= parseInt("User1");
+        var Com1 = User1 - 9999
+        var User2 = document.getElementById("user2").value;
+        var Com2 = User2- 9999
+        function result(){
+           
+                document.getElementById("resul").innerHTML= 19998;
+                document.getElementById("com1").innerHTML= "Com1";
+
+                }
+        
+
+
+
+
+    </script>
+</body>
+
+</html>
